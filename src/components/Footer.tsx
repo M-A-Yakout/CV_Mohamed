@@ -1,5 +1,4 @@
-
-import { Github, Linkedin, Twitter, Heart } from 'lucide-react';
+import { Linkedin, Heart } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -18,22 +17,14 @@ const Footer = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-8">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/mohamed-mostafa-ab38aa317/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
               className="w-12 h-12 bg-glass backdrop-blur-md border border-white/20 rounded-xl flex items-center justify-center text-platinum hover:text-neon-accent hover:glow-border transition-all duration-300"
             >
-              <Github size={20} />
-            </a>
-            <a
-              href="#"
-              className="w-12 h-12 bg-glass backdrop-blur-md border border-white/20 rounded-xl flex items-center justify-center text-platinum hover:text-neon-accent hover:glow-border transition-all duration-300"
-            >
+              <span className="sr-only">LinkedIn</span>
               <Linkedin size={20} />
-            </a>
-            <a
-              href="#"
-              className="w-12 h-12 bg-glass backdrop-blur-md border border-white/20 rounded-xl flex items-center justify-center text-platinum hover:text-neon-accent hover:glow-border transition-all duration-300"
-            >
-              <Twitter size={20} />
             </a>
           </div>
 
