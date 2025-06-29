@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="animate-fade-in flex flex-col items-center">
           {/* Profile Image */}
           <img
-            src="https://d.top4top.io/p_3467ye7dg1.png"
+            src="https://ibb.co/LdTDLSST"
             alt="Profile"
             className="w-36 h-36 md:w-44 md:h-44 rounded-full border-4 border-neon-accent shadow-xl mb-6 object-cover bg-dark-charcoal/40 animate-glow"
             style={{ boxShadow: '0 0 32px 0 rgba(0,255,255,0.15)' }}
