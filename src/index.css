@@ -1,0 +1,88 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark luxury theme design system */
+
+@layer base {
+  :root {
+    --background: 240 10% 6%;
+    --foreground: 0 0% 95%;
+
+    --card: 240 8% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 240 8% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 168 100% 50%;
+    --primary-foreground: 240 10% 6%;
+
+    --secondary: 240 4% 16%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 240 4% 16%;
+    --muted-foreground: 240 5% 65%;
+
+    --accent: 168 100% 50%;
+    --accent-foreground: 240 10% 6%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 6% 20%;
+    --input: 240 6% 20%;
+    --ring: 168 100% 50%;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-dark-slate text-platinum font-sans antialiased;
+    background: linear-gradient(135deg, #0F0F23 0%, #1A1A2E 100%);
+    min-height: 100vh;
+  }
+
+  /* Glass morphism utility */
+  .glass-card {
+    @apply bg-glass backdrop-blur-md border border-white/20 rounded-xl;
+  }
+
+  /* Glow effects */
+  .glow-border {
+    @apply border border-neon-accent/50;
+    box-shadow: 0 0 20px rgba(0, 255, 198, 0.2);
+  }
+
+  .glow-text {
+    text-shadow: 0 0 10px rgba(0, 255, 198, 0.5);
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    background: linear-gradient(135deg, #0F0F23 0%, #1A1A2E 50%, #16213E 100%);
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-neon-accent to-platinum bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply bg-neon-accent text-dark-slate px-8 py-4 rounded-xl font-semibold hover:bg-neon-accent/90 transition-all duration-300 hover:scale-105;
+    box-shadow: 0 0 20px rgba(0, 255, 198, 0.3);
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border-2 border-neon-accent text-neon-accent px-8 py-4 rounded-xl font-semibold hover:bg-neon-accent hover:text-dark-slate transition-all duration-300;
+  }
+}
