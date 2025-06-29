@@ -10,7 +10,14 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="animate-fade-in">
+        <div className="animate-fade-in flex flex-col items-center">
+          {/* Profile Image */}
+          <img
+            src="https://c.top4top.io/p_3467a8k4k1.png"
+            alt="Profile"
+            className="w-36 h-36 md:w-44 md:h-44 rounded-full border-4 border-neon-accent shadow-xl mb-6 object-cover bg-dark-charcoal/40 animate-glow"
+            style={{ boxShadow: '0 0 32px 0 rgba(0,255,255,0.15)' }}
+          />
           <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6">
             <span className="text-platinum">Mohamed</span>{' '}
             <span className="text-gradient">Mostafa</span>
