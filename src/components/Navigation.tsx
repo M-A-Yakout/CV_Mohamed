@@ -1,5 +1,5 @@
-import { Menu, X, Home, User, Code, Briefcase, GraduationCap, Mail } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { Menu, X, Home, User, Code, Briefcase, GraduationCap, Mail } from 'lucide-react';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,6 +43,10 @@ const Navigation = () => {
 
   const handleNavClick = (href: string) => {
     setIsMobileMenuOpen(false);
+    if (href === '#hero') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
