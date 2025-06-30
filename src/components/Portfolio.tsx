@@ -64,7 +64,19 @@ const Portfolio = () => {
       results: [],
       liveUrl: 'https://ames.pythonanywhere.com/',
       githubUrl: 'https://github.com/james-tiger/AMES'
-    }
+    },
+    {
+      id: 6,
+      title: 'PDF to JSON Converter',
+      category: 'JavaScript / HTML',
+      description: 'A simple tool to convert PDF files to JSON format.',
+      longDescription: 'A lightweight web application that allows users to upload PDF files and convert them into JSON format. Built with JavaScript and HTML, it provides a straightforward interface for quick conversions.',
+      image: 'https://scandocflow.com/wp-content/uploads/2024/02/pdf-to-json-1-e1707136925547.png',
+      tech: ['HTML', 'JavaScript', 'CSS'],
+      results: [],
+      liveUrl: 'https://james-tiger.github.io/pdf-to-json-converter/',
+      githubUrl: 'https://github.com/james-tiger/AMES'
+    },    
   ];
 
   return (
@@ -187,6 +199,8 @@ const Portfolio = () => {
                   <a
                     href={selectedProject.liveUrl}
                     className="btn-primary flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <ExternalLink size={20} />
                     View Live Project
