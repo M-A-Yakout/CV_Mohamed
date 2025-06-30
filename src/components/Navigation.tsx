@@ -9,20 +9,20 @@ const Navigation = () => {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
-      
-      // Update active section based on scroll position
       const sections = ['hero', 'about', 'skills', 'portfolio', 'education', 'contact'];
       const scrollPosition = window.scrollY + 100;
-      
-      for (const section of sections) {
+      if (window.scrollY < 100) {
+        setActiveSection('hero');
+        return;
+      }
+      for (const section of sections.slice(1)) { // skip 'hero' for the rest
         const element = document.getElementById(section);
         if (element) {
           const offsetTop = element.offsetTop;
           const offsetHeight = element.offsetHeight;
-          
           if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
             setActiveSection(section);
-            break;
+            return;
           }
         }
       }
