@@ -55,7 +55,7 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      title: 'AMES Local Brand',
+      title: 'SWAG Local Brand',
       category: 'Python / Flask',
       description: 'A trendy e-commerce site for local fashion brands.',
       longDescription: 'AMES is a modern e-commerce platform for local clothing and fashion brands. Built with Python Flask and hosted on PythonAnywhere, it features a stylish design and smooth shopping experience.',
