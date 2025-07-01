@@ -1,5 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { GraduationCap, Award, ExternalLink } from 'lucide-react'; from 'lucide-react';
+import { GraduationCap, Award, ExternalLink } from 'lucide-react';
 
 const Education = () => {
   const education = [
