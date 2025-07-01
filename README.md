@@ -1,5 +1,3 @@
-# Mahmoud Ahmed – Creative Technologist
-
 Welcome to my modern portfolio! This project showcases my work as a full-stack developer, UI/UX enthusiast, and creative technologist. Built with React, Vite, and Tailwind CSS, it features a sleek, responsive design and highlights my latest projects, skills, and certifications.
 
 ## 🚀 Live Demo
