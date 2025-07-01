@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -121,60 +122,6 @@ export default {
 					'50%': {
 						transform: 'translateY(-10px)'
 					}
-				},
-				'shimmer': {
-					'0%': {
-						backgroundPosition: '-200% 0'
-					},
-					'100%': {
-						backgroundPosition: '200% 0'
-					}
-				},
-				'pulse-glow': {
-					'0%, 100%': {
-						boxShadow: '0 0 20px rgba(0, 255, 198, 0.3)'
-					},
-					'50%': {
-						boxShadow: '0 0 40px rgba(0, 255, 198, 0.6)'
-					}
-				},
-				'gradient-border': {
-					'0%': {
-						backgroundPosition: '0% 50%'
-					},
-					'50%': {
-						backgroundPosition: '100% 50%'
-					},
-					'100%': {
-						backgroundPosition: '0% 50%'
-					}
-				},
-				'typing': {
-					'from': {
-						width: '0'
-					},
-					'to': {
-						width: '100%'
-					}
-				},
-				'blink-caret': {
-					'from, to': {
-						borderColor: 'transparent'
-					},
-					'50%': {
-						borderColor: '#00FFC6'
-					}
-				},
-				'reveal-up': {
-					'to': {
-						opacity: '1',
-						transform: 'translateY(0)'
-					}
-				},
-				'spin': {
-					'to': {
-						transform: 'rotate(360deg)'
-					}
 				}
 			},
 			animation: {
@@ -182,14 +129,7 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
 				'glow': 'glow 2s ease-in-out infinite',
-				'float': 'float 3s ease-in-out infinite',
-				'shimmer': 'shimmer 3s ease-in-out infinite',
-				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
-				'gradient-border': 'gradient-border 3s ease infinite',
-				'typing': 'typing 3.5s steps(40, end)',
-				'blink-caret': 'blink-caret 0.75s step-end infinite',
-				'reveal-up': 'reveal-up 0.8s ease-out forwards',
-				'spin-slow': 'spin 8s linear infinite'
+				'float': 'float 3s ease-in-out infinite'
 			},
 			backdropBlur: {
 				xs: '2px',

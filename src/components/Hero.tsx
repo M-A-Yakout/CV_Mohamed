@@ -1,4 +1,4 @@
-import { ArrowRight, Download, Mail } from 'lucide-react';
+import { ArrowRight, Download, Mail, ChevronDown } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -42,7 +42,7 @@ const Hero = () => {
             </a>
             
             <a
-              href="https://www.dropbox.com/scl/fi/zeafhqpir03ki83ahlxwf/Mohamed_Mostafa_CV.pdf?rlkey=31xihnvk49g0qnq4oid644rv4&st=1kftj2g4&dl=0"
+              href="https://www.dropbox.com/scl/fi/xx0gx3r6ybse3y9avhi0t/cv.pdf?rlkey=aczl47jyzoxr5w8yeopecmhti&st=x7dgwm8v&dl=0"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary group flex items-center gap-2 justify-center"
@@ -63,12 +63,101 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-neon-accent/50 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-neon-accent rounded-full mt-2 animate-pulse"></div>
+      {/* Modern CSS Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center space-y-2">
+        <span className="text-platinum/60 text-sm font-medium tracking-wide uppercase">Scroll</span>
+        <div className="scroll-indicator">
+          <div className="scroll-line"></div>
+          <div className="scroll-dot"></div>
+          <ChevronDown className="scroll-chevron w-5 h-5 text-neon-accent" />
         </div>
       </div>
+      <style jsx>{`
+        .scroll-indicator {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          animation: scrollBounce 2s infinite;
+        }
+        .scroll-line {
+          width: 2px;
+          height: 40px;
+          background: linear-gradient(to bottom, transparent, #64ffda, transparent);
+          border-radius: 2px;
+          margin-bottom: 8px;
+          position: relative;
+          overflow: hidden;
+        }
+        .scroll-line::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 10px;
+          background: #64ffda;
+          border-radius: 2px;
+          animation: scrollProgress 2s infinite;
+          box-shadow: 0 0 10px #64ffda;
+        }
+        .scroll-dot {
+          width: 8px;
+          height: 8px;
+          background: #64ffda;
+          border-radius: 50%;
+          box-shadow: 0 0 15px #64ffda;
+          animation: scrollPulse 2s infinite;
+          margin-bottom: 4px;
+        }
+        .scroll-chevron {
+          animation: scrollChevron 2s infinite;
+        }
+        @keyframes scrollBounce {
+          0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+          }
+          40% {
+            transform: translateY(-10px);
+          }
+          60% {
+            transform: translateY(-5px);
+          }
+        }
+        @keyframes scrollProgress {
+          0% {
+            transform: translateY(-100%);
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+          }
+          100% {
+            transform: translateY(400%);
+            opacity: 0;
+          }
+        }
+        @keyframes scrollPulse {
+          0%, 100% {
+            transform: scale(1);
+            opacity: 1;
+          }
+          50% {
+            transform: scale(1.2);
+            opacity: 0.8;
+          }
+        }
+        @keyframes scrollChevron {
+          0%, 100% {
+            transform: translateY(0);
+            opacity: 0.6;
+          }
+          50% {
+            transform: translateY(5px);
+            opacity: 1;
+          }
+        }
+      `}</style>
     </section>
   );
 };

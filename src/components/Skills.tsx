@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 
 const Skills = () => {
@@ -65,6 +64,59 @@ const Skills = () => {
 
   const categories = Object.keys(skillCategories);
 
+  // SVG Circular Progress Helper
+  const getLevelLabel = (level: number) => {
+    if (level >= 90) return { label: 'Professional', color: 'text-green-400' };
+    if (level >= 80) return { label: 'Advanced', color: 'text-yellow-400' };
+    return { label: 'Basic', color: 'text-red-400' };
+  };
+
+  const CircularProgress = ({ value, size = 56, stroke = 6 }: { value: number, size?: number, stroke?: number }) => {
+    const radius = (size - stroke) / 2;
+    const circumference = 2 * Math.PI * radius;
+    const offset = circumference - (value / 100) * circumference;
+
+    return (
+      <svg width={size} height={size} className="block mx-auto">
+        <defs>
+          <linearGradient id="skill-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#00ffe7" />
+            <stop offset="100%" stopColor="#ffd700" />
+          </linearGradient>
+        </defs>
+        <circle
+          cx={size / 2}
+          cy={size / 2}
+          r={radius}
+          stroke="#23272f"
+          strokeWidth={stroke}
+          fill="none"
+        />
+        <circle
+          cx={size / 2}
+          cy={size / 2}
+          r={radius}
+          stroke="url(#skill-gradient)"
+          strokeWidth={stroke}
+          fill="none"
+          strokeDasharray={circumference}
+          strokeDashoffset={offset}
+          strokeLinecap="round"
+          className="transition-all duration-1000"
+        />
+        <text
+          x="50%"
+          y="50%"
+          textAnchor="middle"
+          dy=".3em"
+          className="fill-neon-accent font-bold text-lg"
+        >
+          {value}%
+        </text>
+      </svg>
+    );
+  };
+
   return (
     <section id="skills" className="py-24 bg-dark-slate">
       <div className="container mx-auto px-6">
@@ -79,11 +131,11 @@ const Skills = () => {
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-6 py-3 rounded-xl font-medium transition-all duration-300 ${
-                  activeCategory === category
-                    ? 'bg-neon-accent text-dark-slate'
-                    : 'glass-card text-platinum hover:glow-border'
-                }`}
+                className={`px-6 py-3 rounded-xl font-medium transition-all duration-300 shadow-md
+                  ${activeCategory === category
+                    ? 'bg-gradient-to-r from-neon-accent to-gold text-dark-slate scale-105'
+                    : 'glass-card text-platinum hover:glow-border hover:scale-105'
+                  }`}
               >
                 {skillCategories[category as keyof typeof skillCategories].title}
               </button>
@@ -96,22 +148,21 @@ const Skills = () => {
               {skillCategories[activeCategory as keyof typeof skillCategories].title}
             </h3>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              {skillCategories[activeCategory as keyof typeof skillCategories].skills.map((skill, index) => (
-                <div key={skill.name} className="space-y-2" style={{ animationDelay: `${index * 0.1}s` }}>
-                  <div className="flex justify-between items-center">
-                    <span className="font-medium text-platinum">{skill.name}</span>
-                    <span className="text-neon-accent text-sm">{skill.level}%</span>
+            <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
+              {skillCategories[activeCategory as keyof typeof skillCategories].skills.map((skill, index) => {
+                const { label, color } = getLevelLabel(skill.level);
+                return (
+                  <div
+                    key={skill.name}
+                    className="flex flex-col items-center bg-dark-charcoal/60 rounded-2xl p-6 shadow-lg hover:scale-105 transition-transform duration-300"
+                    style={{ animationDelay: `${index * 0.07}s` }}
+                  >
+                    <CircularProgress value={skill.level} />
+                    <span className="mt-4 font-medium text-platinum text-center">{skill.name}</span>
+                    <span className={`mt-2 text-sm font-semibold ${color}`}>{label}</span>
                   </div>
-                  
-                  <div className="w-full bg-dark-charcoal rounded-full h-2">
-                    <div 
-                      className="bg-gradient-to-r from-neon-accent to-gold h-2 rounded-full transition-all duration-1000 ease-out"
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>

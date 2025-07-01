@@ -206,7 +206,7 @@ const Portfolio = () => {
                     View Live Project
                   </a>
                   <a
-                    href="https://www.dropbox.com/scl/fi/zeafhqpir03ki83ahlxwf/Mohamed_Mostafa_CV.pdf?rlkey=31xihnvk49g0qnq4oid644rv4&st=1kftj2g4&dl=0"
+                    href="https://www.dropbox.com/scl/fi/xx0gx3r6ybse3y9avhi0t/cv.pdf?rlkey=aczl47jyzoxr5w8yeopecmhti&st=x7dgwm8v&dl=0"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-secondary flex items-center gap-2"
