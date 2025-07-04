@@ -20,7 +20,7 @@ const Portfolio = () => {
         'Modern, responsive UI',
         'Client-side caching and robust forms'
       ],
-      liveUrl: 'https://live-chat-jade-one.vercel.app/',
+      liveUrl: 'https://live-chat-indol.vercel.app/',
       githubUrl: 'https://github.com/james-tiger/Live_Chat' 
     },
     {
