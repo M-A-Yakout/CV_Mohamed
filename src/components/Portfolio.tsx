@@ -6,14 +6,38 @@ const Portfolio = () => {
 
   const projects = [
     {
+      id: 0,
+      title: 'Rapid Talk Sphere',
+      category: 'Real-Time Chat / Supabase',
+      description: 'A cutting-edge, real-time chat platform with instant messaging, authentication, and a sleek modern UI.',
+      longDescription: 'Rapid Talk Sphere is a modern, real-time chat platform built with React, TypeScript, and Supabase. It offers instant messaging, secure authentication, user profiles, online status, typing indicators, and a beautiful UI powered by shadcn/ui, Radix UI, and Tailwind CSS. The app leverages TanStack Query for client-side caching and React Hook Form for robust form management, delivering a seamless and engaging chat experience.',
+      image: 'https://g.top4top.io/p_3472am1fa1.png',
+      tech: ['React', 'TypeScript', 'Supabase', 'shadcn/ui', 'Radix UI', 'Tailwind CSS', 'TanStack Query', 'React Hook Form'],
+      results: [
+        'Real-time messaging with Supabase subscriptions',
+        'User authentication and profiles',
+        'Online status and typing indicators',
+        'Modern, responsive UI',
+        'Client-side caching and robust forms'
+      ],
+      liveUrl: 'https://live-chat-jade-one.vercel.app/',
+      githubUrl: 'https://github.com/james-tiger/Live_Chat' 
+    },
+    {
       id: 1,
       title: 'CV Website',
       category: 'React / Vercel',
       description: 'A modern, minimal CV website to showcase your professional profile.',
       longDescription: 'A sleek and responsive CV website built with React and hosted on Vercel. Designed for professionals to present their experience, skills, and projects in a clean, modern format.',
-      image: 'https://h.top4top.io/p_3467ut8ln1.png', // Custom CV sample image
+      image: 'https://h.top4top.io/p_3467ut8ln1.png',
       tech: ['React', 'Vercel'],
-      results: [],
+      results: [
+        'Fully responsive design across all devices',
+        'Modern and clean professional layout',
+        'Fast loading with optimized performance',
+        'Easy navigation and user-friendly interface',
+        'Professional portfolio presentation'
+      ],
       liveUrl: 'https://silver-wbsite.vercel.app/',
       githubUrl: 'https://github.com/james-tiger/silver-wbsite'
     },
@@ -25,7 +49,13 @@ const Portfolio = () => {
       longDescription: 'A visually engaging menu website for Sidi Burger, built with TypeScript and deployed on Vercel. Features a modern UI and easy navigation for customers to explore the menu.',
       image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80',
       tech: ['TypeScript', 'Vercel'],
-      results: [],
+      results: [
+        'Interactive menu with high-quality food imagery',
+        'Mobile-first responsive design',
+        'Fast loading and smooth navigation',
+        'Modern restaurant branding and styling',
+        'User-friendly menu browsing experience'
+      ],
       liveUrl: 'https://sidi-burger.vercel.app/',
       githubUrl: 'https://github.com/james-tiger/SidiBurger'
     },
@@ -35,9 +65,15 @@ const Portfolio = () => {
       category: 'Python / Flask',
       description: 'A creative gang-themed website built with Flask.',
       longDescription: 'Rescobar is a unique, gang-themed web app developed using Python Flask and hosted on PythonAnywhere. It features a bold design and dynamic content presentation.',
-      image: 'https://e.top4top.io/p_3467agdm51.png', // Custom Rescobar image
+      image: 'https://e.top4top.io/p_3467agdm51.png',
       tech: ['Python', 'Flask', 'PythonAnywhere'],
-      results: [],
+      results: [
+        'Dynamic content rendering with Flask templates',
+        'Bold and engaging thematic design',
+        'Server-side routing and logic implementation',
+        'Custom Python backend functionality',
+        'Unique creative concept execution'
+      ],
       liveUrl: 'https://rescobar.pythonanywhere.com/',
       githubUrl: 'https://github.com/james-tiger/Rescobar'
     },
@@ -47,9 +83,15 @@ const Portfolio = () => {
       category: 'HTML / GitHub Pages',
       description: 'A modern showcase site for bots and digital products.',
       longDescription: 'JAMES STORE is a clean, modern website for displaying bots and digital products. Built with HTML and hosted on GitHub Pages, it offers a simple and effective user experience.',
-      image: 'https://bs-uploads.toptal.io/blackfish-uploads/components/open_graph_image/8959325/og_image/optimized/how-to-make-a-discord-bot-7c0fe302b98b05b145682344b3a4ec59.png', // Custom Discord bot image
+      image: 'https://bs-uploads.toptal.io/blackfish-uploads/components/open_graph_image/8959325/og_image/optimized/how-to-make-a-discord-bot-7c0fe302b98b05b145682344b3a4ec59.png',
       tech: ['HTML', 'GitHub Pages'],
-      results: [],
+      results: [
+        'Clean product showcase layout',
+        'GitHub Pages hosting integration',
+        'Lightweight and fast loading',
+        'Simple and intuitive navigation',
+        'Effective digital product presentation'
+      ],
       liveUrl: 'https://james-tiger.github.io/JAMES-STORE/',
       githubUrl: 'https://github.com/james-tiger/JAMES-STORE'
     },
@@ -61,7 +103,13 @@ const Portfolio = () => {
       longDescription: 'AMES is a modern e-commerce platform for local clothing and fashion brands. Built with Python Flask and hosted on PythonAnywhere, it features a stylish design and smooth shopping experience.',
       image: 'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80',
       tech: ['Python', 'Flask', 'PythonAnywhere'],
-      results: [],
+      results: [
+        'Modern e-commerce functionality',
+        'Fashion-focused product display',
+        'Flask-powered backend system',
+        'Local brand promotion platform',
+        'Stylish and trendy user interface'
+      ],
       liveUrl: 'https://ames.pythonanywhere.com/',
       githubUrl: 'https://github.com/james-tiger/AMES'
     },
@@ -73,7 +121,13 @@ const Portfolio = () => {
       longDescription: 'A lightweight web application that allows users to upload PDF files and convert them into JSON format. Built with JavaScript and HTML, it provides a straightforward interface for quick conversions.',
       image: 'https://scandocflow.com/wp-content/uploads/2024/02/pdf-to-json-1-e1707136925547.png',
       tech: ['HTML', 'JavaScript', 'CSS'],
-      results: [],
+      results: [
+        'File upload and processing functionality',
+        'PDF to JSON conversion capability',
+        'Client-side processing for privacy',
+        'Simple and intuitive user interface',
+        'Quick and efficient file conversion'
+      ],
       liveUrl: 'https://james-tiger.github.io/pdf-to-json-converter/',
       githubUrl: 'https://github.com/james-tiger/AMES'
     },    
