@@ -21,7 +21,7 @@ const Contact = () => {
 
     // Open appropriate email provider's compose window
     const email = formData.email.trim().toLowerCase();
-    const recipient = 'moheda438@gmail.com';
+    const recipient = 'mohamed.ashraf.y.s.m@gmail.com';
     const subject = encodeURIComponent(formData.subject);
     const body = encodeURIComponent(formData.message);
     let composeUrl = '';
@@ -74,7 +74,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="text-platinum font-medium">Email</p>
-                      <p className="text-platinum/80">moheda438@gmail.com</p>
+                      <p className="text-platinum/80">mohamed.ashraf.y.s.m@gmail.com</p>
                     </div>
                   </div>
 
