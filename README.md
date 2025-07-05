@@ -35,10 +35,3 @@ Welcome to my modern portfolio! This project showcases my work as a full-stack d
 
 ## 🖼️ Screenshots
 ![Portfolio Screenshot](https://h.top4top.io/p_3467ut8ln1.png)
-
-## 📄 License
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-> Designed & developed by Mahmoud Ahmed. Connect with me on [LinkedIn](https://www.linkedin.com/) or [Email](mailto:moheda438@gmail.com).
