@@ -2,7 +2,7 @@ Welcome to my modern portfolio! This project showcases my work as a full-stack d
 
 ## 🚀 Live Demo
 
-[View Portfolio Live](https://silver-wbsite.vercel.app/)
+[View Portfolio Live](https://cv-mohamed.vercel.app/)
 
 ## ✨ Features
 - Modern, responsive design
@@ -34,4 +34,4 @@ Welcome to my modern portfolio! This project showcases my work as a full-stack d
 ```
 
 ## 🖼️ Screenshots
-![Portfolio Screenshot](https://h.top4top.io/p_3467ut8ln1.png)
+![Portfolio Screenshot](https://d.top4top.io/p_3473euyrl1.png)
