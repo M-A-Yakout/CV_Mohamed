@@ -102,7 +102,7 @@ const Contact = () => {
                 {/* Resume Download */}
                 <div className="mt-8 pt-8 border-t border-white/20">
                   <a
-                    href="https://www.dropbox.com/scl/fi/xx0gx3r6ybse3y9avhi0t/cv.pdf?rlkey=aczl47jyzoxr5w8yeopecmhti&st=x7dgwm8v&dl=0"
+                    href="https://www.dropbox.com/scl/fi/0nvb6bqab6lcegwfclwa0/New_cv.pdf?rlkey=cjz49wx68zw5snqnsi8612asl&st=via6fvak&dl=0"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-primary w-full flex items-center justify-center gap-2 animate-glow"
