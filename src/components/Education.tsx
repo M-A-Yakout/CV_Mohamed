@@ -47,7 +47,7 @@ const Education = () => {
       issuer: "Data Transmission and Switching in Computer Networks",
       date: "2025",
       credentialId: "D-Linkk",
-      link: "https://www.dropbox.com/scl/fi/smt65hqfyyv7qqbjfpppt/NB1_-1.pdf?rlkey=91n1ylw6ioe2ne7xpgbx3bwo0&st=paczphv4&dl=0"
+      link: "https://www.dropbox.com/scl/fi/smt65hqfyyv7qqbjfpppt/NB1_-1.pdf?rlkey=91n1ylw6ioe2ne7xpgbx3bwo0&st=g03v7dhg&dl=0"
     },
     {
       name: "Programming Basics",
