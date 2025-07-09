@@ -2,13 +2,14 @@
   position: fixed;
   top: 1rem;
   left: 1rem;
-  background: #1A1A2E; /* dark-charcoal */
+  background: #1A1A2E;
   border-radius: 10px;
   padding: 1rem 0;
   box-shadow: 0 0 40px rgba(0,0,0,0.03);
   height: calc(100vh - 4rem);
-  border: 1px solid rgba(255, 255, 255, 0.1); /* glass border */
+  border: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 100;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .navbar__link {
@@ -18,7 +19,7 @@
   justify-content: center;
   height: 3.5rem;
   width: 5.5rem;
-  color: #E5E4E2; /* platinum */
+  color: #E5E4E2;
   transition: 250ms ease all;
 }
 
@@ -29,8 +30,8 @@
   margin-left: 1rem;
   opacity: 0;
   pointer-events: none;
-  color: #00FFC6; /* neon-accent */
-  background: #1A1A2E; /* dark-charcoal */
+  color: #00FFC6;
+  background: #1A1A2E;
   padding: 0.75rem;
   transition: 250ms ease all;
   border-radius: 17.5px;
@@ -68,7 +69,7 @@
   left: 1rem;
   width: 3.5rem;
   height: 3.5rem;
-  background: #00FFC6; /* neon-accent */
+  background: #00FFC6;
   border-radius: 17.5px;
   transition: 250ms cubic-bezier(1, 0.2, 0.1, 1.2) all;
 }
@@ -86,5 +87,5 @@
 .navbar__item:nth-child(6):hover::before { top: 17.5rem; animation: gooey 250ms 1; }
 
 .navbar__link.active {
-  color: #00FFC6; /* neon-accent */
+  color: #00FFC6;
 }

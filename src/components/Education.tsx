@@ -63,7 +63,6 @@ const Education = () => {
       credentialId: "02OPD-0123-4-330",
       link: "https://open.spbstu.ru/certificate/02OPD-0123-4-330.pdf"
     },    
-    
     {
       name: "Information technology and services",
       issuer: "Ural Federal University",
@@ -78,6 +77,13 @@ const Education = () => {
       date: "2024",
       credentialId: "dStUvU8eZCyatzwH_5ed32b6ecab",
       link: "https://storage.yandexcloud.net/plp-certs-306e0eba5a/certificate-files/urfu/SoftSkills/fall_2024/dStUvU8eZCyatzwH_5ed32b6ecab.pdf"
+    },
+    {
+      name: "Sprints x Microsoft Summer Camp - Web Development",
+      issuer: "Microsoft",
+      date: "2024",
+      credentialId: "MS-WebDev-2024",
+      link: "https://www.dropbox.com/scl/fi/xdd9rki8bic3ifkc3zwwm/downloaded.pdf?rlkey=e5ifnc2zg9wt5notnlwucqfr4&st=fj57v67k&dl=0"
     },
   ];
 
@@ -191,7 +197,7 @@ const Education = () => {
                 <div className="text-platinum/60 text-sm">Degrees</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-gold mb-2">9</div>
+                <div className="text-3xl font-bold text-gold mb-2">10</div>
                 <div className="text-platinum/60 text-sm">Certifications</div>
               </div>
               <div className="text-center">

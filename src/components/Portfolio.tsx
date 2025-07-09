@@ -282,7 +282,8 @@ const Portfolio = () => {
       ],
       liveUrl: 'https://github.com/james-tiger/Project_website_python',
       githubUrl: 'https://github.com/james-tiger/Project_website_python'
-    }
+    },
+    
   ];
 
   return (
