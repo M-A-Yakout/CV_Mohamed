@@ -54,7 +54,7 @@ const Contact = () => {
             Let's <span className="text-gradient">Connect</span>
           </h2>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Info */}
             <div className="space-y-8">
               <div className="glass-card p-8 hover:glow-border transition-all duration-300">

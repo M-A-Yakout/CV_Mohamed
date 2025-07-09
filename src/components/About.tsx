@@ -7,7 +7,7 @@ const About = () => {
             About <span className="text-gradient">Me</span>
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-platinum/90 leading-relaxed">
                 I'm a student in college, passionate about technology and creative solutions.

@@ -2,7 +2,7 @@ import { ArrowRight, Download, Mail, ChevronDown } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center hero-gradient relative overflow-hidden pt-20">
+    <section id="hero" className="min-h-screen flex items-center justify-center hero-gradient relative overflow-hidden pt-20 px-4 sm:px-6 lg:px-8">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-neon-accent/10 rounded-full blur-3xl animate-float"></div>
@@ -19,16 +19,16 @@ const Hero = () => {
             loading="eager"
             decoding="async"
           />
-          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif font-bold mb-6">
             <span className="text-platinum">Mohamed</span>{' '}
             <span className="text-gradient">Mostafa</span>
           </h1>
           
-          <h2 className="text-2xl md:text-3xl text-neon-accent font-semibold mb-8 glow-text">
+          <h2 className="text-xl sm:text-2xl md:text-3xl text-neon-accent font-semibold mb-8 glow-text">
             Creative Technologist
           </h2>
           
-          <p className="text-xl md:text-2xl text-platinum/90 mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-platinum/90 mb-12 max-w-3xl mx-auto leading-relaxed">
             Building seamless digital experiences that convert. 
             <span className="text-gradient font-medium"> Transforming ideas into scalable solutions.</span>
           </p>

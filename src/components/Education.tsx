@@ -101,7 +101,7 @@ const Education = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Education */}
             <div>
               <div className="flex items-center gap-3 mb-8">

@@ -148,7 +148,7 @@ const Skills = () => {
               {skillCategories[activeCategory as keyof typeof skillCategories].title}
             </h3>
 
-            <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
               {skillCategories[activeCategory as keyof typeof skillCategories].skills.map((skill, index) => {
                 const { label, color } = getLevelLabel(skill.level);
                 return (
