@@ -2,7 +2,7 @@ import { ArrowRight, Download, Mail, ChevronDown } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center hero-gradient relative overflow-hidden pt-20">
+    <section id="hero" className="min-h-screen flex items-center justify-center hero-gradient relative overflow-hidden pt-20">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-neon-accent/10 rounded-full blur-3xl animate-float"></div>
