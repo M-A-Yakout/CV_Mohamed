@@ -92,7 +92,7 @@ const Portfolio = () => {
         'Simple and intuitive navigation',
         'Effective digital product presentation'
       ],
-      liveUrl: 'https://james-tiger.github.io/JAMES-STORE/',
+      liveUrl: 'https://m-a-yakout.github.io/JAMES-STORE/',
       githubUrl: 'https://github.com/james-tiger/JAMES-STORE'
     },
     {
@@ -128,7 +128,7 @@ const Portfolio = () => {
         'Simple and intuitive user interface',
         'Quick and efficient file conversion'
       ],
-      liveUrl: 'https://james-tiger.github.io/pdf-to-json-converter/',
+      liveUrl: 'https://m-a-yakout.github.io/pdf-to-json-converter/',
       githubUrl: 'https://github.com/james-tiger/AMES'
     },    
     {
