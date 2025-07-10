@@ -81,11 +81,11 @@ const Portfolio = () => {
     {
       id: 4,
       title: 'Project Bank',
-      category: 'Android / Kotlin',
+      category: 'Android / Java',
       description: 'Modern Android banking app with secure authentication, account management, and transaction features.',
       longDescription: 'Project Bank is a feature-rich Android application designed to simulate a modern mobile banking experience. It offers real-time account management, secure user authentication via Firebase, fund transfers, deposits, withdrawals, transaction history tracking, and multi-currency support. Built with a clean UI using Material Design principles, it ensures a smooth and secure user experience.',
       image: 'https://zeroonesh.com/wp-content/uploads/2021/03/banking-management2.jpg',
-      tech: ['Kotlin', 'Firebase', 'AndroidX', 'Room Database', 'Material Design'],
+      tech: ['Java', 'Firebase', 'AndroidX', 'Room Database', 'Material Design'],
       results: [
         'Secure Firebase-based user authentication',
         'Real-time account balance and card information display',
