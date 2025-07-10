@@ -80,19 +80,19 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      title: 'Bank Management System',
-      category: 'Python / Flask',
-      description: 'Comprehensive banking system with account management, transactions, and admin dashboard.',
-      longDescription: 'A full-featured bank management system built with Python Flask. Includes customer account management, transaction processing, admin dashboard with analytics, and secure authentication. The system supports multiple account types, transaction history, and reporting features for bank operations.',
+      title: 'Project Bank',
+      category: 'Android / Kotlin',
+      description: 'Modern Android banking app with secure authentication, account management, and transaction features.',
+      longDescription: 'Project Bank is a feature-rich Android application designed to simulate a modern mobile banking experience. It offers real-time account management, secure user authentication via Firebase, fund transfers, deposits, withdrawals, transaction history tracking, and multi-currency support. Built with a clean UI using Material Design principles, it ensures a smooth and secure user experience.',
       image: 'https://zeroonesh.com/wp-content/uploads/2021/03/banking-management2.jpg',
-      tech: ['Python', 'Flask', 'SQLite', 'HTML/CSS', 'JavaScript'],
+      tech: ['Kotlin', 'Firebase', 'AndroidX', 'Room Database', 'Material Design'],
       results: [
-        'Customer account management',
-        'Transaction processing system',
-        'Admin dashboard with analytics',
-        'Secure authentication system',
-        'Multiple account types support',
-        'Transaction history and reporting'
+        'Secure Firebase-based user authentication',
+        'Real-time account balance and card information display',
+        'Deposit, withdrawal, and fund transfer functionality',
+        'Transaction history log with filtering options',
+        'Multi-currency support for global users',
+        'Modern and responsive UI built with Material Design'
       ],
       liveUrl: 'https://github.com/M-A-Yakout/ProjectBank',
       githubUrl: 'https://github.com/M-A-Yakout/ProjectBank'
