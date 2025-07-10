@@ -153,7 +153,7 @@ const Education = () => {
                 <h3 className="text-3xl font-serif font-bold text-platinum">Certifications</h3>
               </div>
 
-              <div className="space-y-4">
+              <div className="h-[600px] overflow-y-auto pr-3 space-y-4 custom-scrollbar">
                 {certifications.map((cert, index) => (
                   <Card key={index} className="glass-card group hover:glow-border transition-all duration-300">
                     <CardContent className="p-6">
@@ -212,6 +212,23 @@ const Education = () => {
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: rgba(255, 255, 255, 0.05);
+          border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background: rgba(255, 255, 255, 0.3);
+        }
+      `}</style>
     </section>
   );
 };

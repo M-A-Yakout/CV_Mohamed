@@ -3,6 +3,7 @@ import { ExternalLink } from 'lucide-react';
 
 const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null);
+  const [showAllProjects, setShowAllProjects] = useState(false);
 
   const projects = [
     {
@@ -79,6 +80,44 @@ const Portfolio = () => {
     },
     {
       id: 4,
+      title: 'Bank Management System',
+      category: 'Python / Flask',
+      description: 'Comprehensive banking system with account management, transactions, and admin dashboard.',
+      longDescription: 'A full-featured bank management system built with Python Flask. Includes customer account management, transaction processing, admin dashboard with analytics, and secure authentication. The system supports multiple account types, transaction history, and reporting features for bank operations.',
+      image: 'https://zeroonesh.com/wp-content/uploads/2021/03/banking-management2.jpg',
+      tech: ['Python', 'Flask', 'SQLite', 'HTML/CSS', 'JavaScript'],
+      results: [
+        'Customer account management',
+        'Transaction processing system',
+        'Admin dashboard with analytics',
+        'Secure authentication system',
+        'Multiple account types support',
+        'Transaction history and reporting'
+      ],
+      liveUrl: 'https://github.com/M-A-Yakout/ProjectBank',
+      githubUrl: 'https://github.com/M-A-Yakout/ProjectBank'
+    },
+    {
+      id: 5,
+      title: 'Food & Drink E-Commerce',
+      category: 'React / E-Commerce',
+      description: 'Modern food and drink e-commerce platform with cart functionality.',
+      longDescription: 'A responsive e-commerce platform specializing in food and drink products. Features include product listings, shopping cart functionality, category filtering, and a clean modern UI. Built with React for a smooth user experience with state management for cart operations.',
+      image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80',
+      tech: ['React', 'JavaScript', 'CSS', 'HTML', 'State Management'],
+      results: [
+        'Product catalog with filtering',
+        'Shopping cart functionality',
+        'Responsive design for all devices',
+        'Clean modern user interface',
+        'State management for cart operations',
+        'Smooth user experience'
+      ],
+      liveUrl: 'https://m-a-yakout.github.io/Shop_Cart_Food-Drink/index.html',
+      githubUrl: 'https://github.com/M-A-Yakout/Shop_Cart_Food-Drink'
+    },
+    {
+      id: 6,
       title: 'JAMES STORE',
       category: 'HTML / GitHub Pages',
       description: 'A modern showcase site for bots and digital products.',
@@ -96,7 +135,7 @@ const Portfolio = () => {
       githubUrl: 'https://github.com/james-tiger/JAMES-STORE'
     },
     {
-      id: 5,
+      id: 7,
       title: 'AMES Local Brand',
       category: 'Python / Flask',
       description: 'A trendy e-commerce site for local fashion brands.',
@@ -114,7 +153,7 @@ const Portfolio = () => {
       githubUrl: 'https://github.com/james-tiger/AMES'
     },
     {
-      id: 6,
+      id: 8,
       title: 'PDF to JSON Converter',
       category: 'JavaScript / HTML',
       description: 'A simple tool to convert PDF files to JSON format.',
@@ -132,7 +171,7 @@ const Portfolio = () => {
       githubUrl: 'https://github.com/james-tiger/AMES'
     },    
     {
-      id: 7,
+      id: 9,
       title: 'Deep Learning System for Speech Disorder Classification using MFCC and LSTM',
       category: 'Machine Learning / Python',
       description: 'Advanced speech disorder classification system using MFCC feature extraction and LSTM neural networks for Russian voice datasets.',
@@ -151,7 +190,7 @@ const Portfolio = () => {
       githubUrl: 'https://github.com/james-tiger/Mel-Frequency-Cepstral-Coefficients-MFCCs-Long-Short-Term-Memory-LSTM-'
     },
     {
-      id: 8,
+      id: 10,
       title: 'Healthcare Management & Monitoring Platform with AI Analytics',
       category: 'Full Stack / Healthcare',
       description: 'HIPAA-compliant healthcare platform with AI-powered clinical decision support and predictive analytics.',
@@ -170,7 +209,7 @@ const Portfolio = () => {
       githubUrl: 'https://github.com/james-tiger/project-health-gz'
     },
     {
-      id: 9,
+      id: 11,
       title: 'Discord Bot for User Interaction Tracking',
       category: 'Discord Bot / Node.js',
       description: 'Multifunctional Discord bot with Arabic language support and comprehensive user engagement analytics.',
@@ -189,7 +228,7 @@ const Portfolio = () => {
       githubUrl: 'https://github.com/james-tiger/bots'
     },
     {
-      id: 10,
+      id: 12,
       title: 'Modern API Backend for Healthcare Systems',
       category: 'Backend API / Node.js',
       description: 'RESTful API with GraphQL support, featuring JWT authentication, role-based access control, and CI/CD pipelines.',
@@ -208,7 +247,7 @@ const Portfolio = () => {
       githubUrl: 'https://github.com/james-tiger/Project-python-API'
     },
     {
-      id: 11,
+      id: 13,
       title: 'C# Perfect Numbers Calculator',
       category: 'C# / Algorithm',
       description: 'Console application for finding and analyzing perfect numbers using three different algorithms with performance comparison.',
@@ -227,7 +266,7 @@ const Portfolio = () => {
       githubUrl: 'https://github.com/james-tiger/PerfectNumbers_CHARP'
     },
     {
-      id: 12,
+      id: 14,
       title: 'TypeScript QR Code Generator',
       category: 'TypeScript / Utility',
       description: 'Simple yet powerful QR code generator built with TypeScript for type safety and better developer experience.',
@@ -246,7 +285,7 @@ const Portfolio = () => {
       githubUrl: 'https://github.com/james-tiger/TypeScript-QrCode'
     },
     {
-      id: 13,
+      id: 15,
       title: 'E-commerce Storefront',
       category: 'Full Stack / E-commerce',
       description: 'Complete e-commerce website with secure authentication, product listings, and payment gateway integration.',
@@ -265,7 +304,7 @@ const Portfolio = () => {
       githubUrl: 'https://github.com/james-tiger/Store_website'
     },
     {
-      id: 14,
+      id: 16,
       title: 'Python Website Framework',
       category: 'Python / Web Framework',
       description: 'Rapid development framework built with Flask/Django for blogs, portfolios, and small business websites.',
@@ -283,8 +322,31 @@ const Portfolio = () => {
       liveUrl: 'https://github.com/james-tiger/Project_website_python',
       githubUrl: 'https://github.com/james-tiger/Project_website_python'
     },
+    {
+      id: 17,
+      title: 'Flight Booking System',
+      category: 'Full Stack / Travel',
+      description: 'Comprehensive flight booking platform with real-time search, booking management, and admin dashboard.',
+      longDescription: 'The Flight Booking System is a full-stack web application that allows users to search for flights, book tickets, and manage their reservations. The system features real-time flight search with filtering options, secure user authentication, booking management, and an admin dashboard for flight and user management. Built with modern web technologies, it provides a seamless booking experience with responsive design across all devices.',
+      image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80',
+      tech: ['Java', 'MySQL', 'JDBC', 'CLI'],
+      results: [
+        'User registration and authentication system',
+        'Flight search by origin and destination',
+        'Flight booking and seat reservation',
+        'View personal booking history',
+        'Cancel existing bookings',
+        'User password management',
+        'Admin flight management (add/view flights)',
+        'Admin user and booking oversight'
+      ],
+      liveUrl: 'https://github.com/M-A-Yakout/Booking-Flight',
+      githubUrl: 'https://github.com/M-A-Yakout/Booking-Flight',
+    },
     
   ];
+
+  const displayedProjects = showAllProjects ? projects : projects.slice(0, 6);
 
   return (
     <section id="portfolio" className="py-24 bg-dark-charcoal/30">
@@ -295,7 +357,7 @@ const Portfolio = () => {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
+            {displayedProjects.map((project) => (
               <div
                 key={project.id}
                 className="glass-card p-6 hover:glow-border transition-all duration-300 cursor-pointer group"
@@ -358,6 +420,28 @@ const Portfolio = () => {
               </div>
             ))}
           </div>
+
+          {!showAllProjects && projects.length > 8 && (
+            <div className="text-center mt-12">
+              <button
+                onClick={() => setShowAllProjects(true)}
+                className="btn-primary px-8 py-3 rounded-full text-lg font-medium hover:bg-opacity-90 transition-all duration-300"
+              >
+                View All Projects ({projects.length})
+              </button>
+            </div>
+          )}
+
+          {showAllProjects && (
+            <div className="text-center mt-12">
+              <button
+                onClick={() => setShowAllProjects(false)}
+                className="btn-secondary px-8 py-3 rounded-full text-lg font-medium hover:bg-opacity-90 transition-all duration-300"
+              >
+                Show Less
+              </button>
+            </div>
+          )}
         </div>
       </div>
 

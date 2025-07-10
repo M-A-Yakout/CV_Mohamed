@@ -1,4 +1,4 @@
-import { Linkedin, Heart } from 'lucide-react';
+import { Linkedin, Heart, Github, Youtube } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -26,6 +26,26 @@ const Footer = () => {
               <span className="sr-only">LinkedIn</span>
               <Linkedin size={20} />
             </a>
+            <a
+              href="https://github.com/M-A-Yakout"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub profile"
+              className="w-12 h-12 bg-glass backdrop-blur-md border border-white/20 rounded-xl flex items-center justify-center text-platinum hover:text-neon-accent hover:glow-border transition-all duration-300"
+            >
+              <span className="sr-only">GitHub</span>
+              <Github size={20} />
+            </a>
+            <a
+              href="https://www.youtube.com/@Fox_Store722"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube channel"
+              className="w-12 h-12 bg-glass backdrop-blur-md border border-white/20 rounded-xl flex items-center justify-center text-platinum hover:text-neon-accent hover:glow-border transition-all duration-300"
+            >
+              <span className="sr-only">YouTube</span>
+              <Youtube size={20} />
+            </a>
           </div>
 
           {/* Copyright */}
@@ -33,7 +53,6 @@ const Footer = () => {
             <p className="text-platinum/60 text-sm flex items-center justify-center gap-2">
               © 2025 Mohamed Mostafa.{' '}
               <Heart size={16} className="text-neon-accent animate-pulse" />
-              
             </p>
           </div>
         </div>
