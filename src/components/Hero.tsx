@@ -42,7 +42,7 @@ const Hero = () => {
             </a>
             
             <a
-              href="https://www.dropbox.com/scl/fi/dul33c2h21srwogjtp6is/CV_MA.pdf?rlkey=ro4kcldty5ocztrxa43tq1x24&st=p52p2byw&dl=0"
+              href="https://www.dropbox.com/scl/fi/hhiqd8ll61g81u72ia2bo/CV_M_A.pdf?rlkey=zu4g3iu1bgqt7km35jnvx4idf&st=1ewfgw8f&dl=0"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary group flex items-center gap-2 justify-center"
